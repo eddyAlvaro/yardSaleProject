@@ -1,0 +1,115 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.login-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    width: 30rem;
+}
+
+.logo {
+    width: 15rem;
+    margin-bottom: 4.8rem;
+    justify-self: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: .4rem;
+}
+
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: .8rem;
+    height: 3rem;
+    margin-bottom: 1.6rem;
+    padding: .6rem;
+    font-size: var(--md);
+}
+
+.primary-btn {
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: .8rem;
+    width: 100%;
+    color: var(--white);
+    margin: 1.6rem 0;
+
+}
+
+.forgot-pass {
+    font-size: var(--sm);
+    color: var(--hospital-green);
+    text-align: center;
+    text-decoration: none;
+}
+
+.success-btn {
+    background-color: var(--white);
+    border: 1px solid var(--hospital-green);
+    border-radius: .8rem;
+    /* inherit hace que el elemento donde se usa, tome las propeidades de su padre  */
+    width: inherit;
+    color: var(--hospital-green);
+    position: absolute;
+    bottom: 2rem;
+}
+
+.value-btn {
+    font-size: var(--md);
+    font-weight: bold;
+    cursor: pointer; 
+    height: 5rem; 
+}
+
+@media (min-width: 640px){
+    .logo{
+        display: none;
+    }
+    .success-btn {
+        position: static;
+        margin-top: 5rem;
+    }
+}
+
+@media (max-height: 450px) {
+    .success-btn {
+        position: static;
+    }
+}
