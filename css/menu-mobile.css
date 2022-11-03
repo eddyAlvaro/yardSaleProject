@@ -1,0 +1,79 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mobile-menu {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-menu .div-content-1 ul:nth-child(1){
+    margin-top: 0;
+}
+
+.mobile-menu .first-list {
+    border-bottom: .1rem solid var(--very-light-pink);
+}
+.mobile-menu .div-content-1 ul {
+    padding-bottom: 2.5rem;
+}
+
+.mobile-menu .div-content-1 ul li:last-child {
+    margin-bottom: 1.4rem;
+}
+
+.general-list{
+    list-style: none;
+    margin-top: 4rem;
+}
+
+.general-list a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.first-list li, .second-list li {
+    margin-bottom: 3.5rem;
+
+}
+
+.div-content {
+    display: inline-block;
+    padding-bottom: 5rem;
+}
+
+.div-content .email{
+    font-weight: 300;
+    font-size: var(--sm);
+}
+
+.div-content .sign-out {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+

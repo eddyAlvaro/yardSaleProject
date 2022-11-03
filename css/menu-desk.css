@@ -1,0 +1,60 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.desk-menu {
+    width: 14rem;
+    height: auto;
+    border: .1rem solid var(--very-light-pink);
+    border-radius: .6rem;
+    padding: 2rem 2rem 0 2rem;
+
+}
+
+.desk-menu ul {
+    list-style : none;
+}
+
+.desk-menu ul li {
+    text-align: end;
+}
+
+.desk-menu ul li:last-child {
+    padding-top: 2rem;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.desk-menu ul li:nth-child(1), .desk-menu ul li:nth-child(2) {
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.desk-menu ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.desk-menu ul li a {
+    text-decoration: none;
+    color: var(--black);
+    display: inline-block;
+    padding-bottom: 2rem;
+}
